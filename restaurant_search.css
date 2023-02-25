@@ -1,0 +1,192 @@
+*{
+    font-family: Poppins;
+}
+
+body{
+    background-color: #FBFBFB;
+}
+
+.siteHeader{
+    background-color: #CE0505;
+    height: 65px;
+    max-width: 100%;
+    position: relative;
+}
+
+.logo{
+    color: #EB2929;
+    font-size: 30px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0px 9px;
+    position: absolute;
+    top: 8px;
+    left: 70px;
+}
+
+.logIn, .createAcc{
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+}
+
+
+.logIn{
+    top: 23px;
+    right: 246px;
+}
+
+.createAcc{
+    top: 18px;
+    right: 80px;
+    background-color: #CE0505;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 4px 6px;
+}
+
+.restaurants_list{
+    margin-top: 35px;
+    margin-left: 125px;
+    height: 680px;
+    position: relative;
+}
+
+.secTitle{
+    color: #192F60;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.filterSort{
+    position: absolute;
+    height: 530px;
+    width: 230px;
+    background-color: #FFFFFF;
+    margin-top: 22px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding-top: 14px;
+    padding-left: 25px;
+}
+
+.filter, .sort{
+    color: #192F60;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.locations, .cuisines, .cost-type{
+    color: #192F60;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.places{
+    height: 28px;
+    width: 186px;
+    color: #8C96AB;
+    border-color: #8C96AB;
+    padding-left: 4px;
+}
+
+.cuisine, .cost, .price{
+    color: #8C96AB;
+    font-size: 13px;
+}
+
+.sorting{
+    margin-top: 15px;   
+}
+
+.option-1, .option-2{
+    top: 22px;
+    left: 340px;
+    height: 180px;
+    width: 610px;
+    background-color: #FFFFFF;
+    position: relative;
+    box-shadow: 0px 3px 6px #00000029;
+    padding-top: 30px;
+    padding-left: 35px;
+}
+
+.food-img{
+    height: 82px;
+    width: 86px;
+    border-radius: 18px;
+}
+
+.restaurantAddress{
+    position: absolute;
+    top: 6px;
+    left: 180px;
+}
+
+.restaurantName{
+    color: #192F60;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.fort{
+    color: #192F60;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.address{
+    color: #636F88;
+    font-size: 12px;
+    margin: 0px;
+}
+
+hr{
+    color: #4441412c;
+    margin-right: 25px;
+}
+
+.pre-1{
+    display: inline-block;
+    color: #636F88;
+    font-size: 12px;
+}
+
+.pre-2{
+    display: inline-block;
+    color: #192F60;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.option-2{
+    top: 60px;  
+}
+
+.pagination{
+    position: absolute;
+    top: 84%;
+    left: 48%;
+}
+
+.page{
+    color: #8C96AB;
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 0px 6px;
+    text-decoration: none;
+}
+
+
+
+
+
+
