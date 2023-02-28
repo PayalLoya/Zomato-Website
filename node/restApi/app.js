@@ -32,11 +32,6 @@ MongoClient.connect(MONGO_URL, connectionParams)
         console.error(`Error connecting to the database. ${err}`);
     });
 
-// Server listening on port
-// app.listen(PORT, () => {
-//     console.log(`Server started on port ${PORT}`);
-// });
-
 // Express server default endpoint
 app.get("/", (req,res) => {
     res.send("Hello, welcome to Express 🥳😄😃😄")
