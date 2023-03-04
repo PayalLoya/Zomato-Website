@@ -46,5 +46,3 @@ app.get("/locations", (req, res) => {
     });
 });
 
-  
-  
