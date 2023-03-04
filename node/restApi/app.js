@@ -23,13 +23,14 @@ const connectionParams={
 }
 MongoClient.connect(MONGO_URL, connectionParams)
     .then( () => {
-        console.log('Connected to database');
+        console.log('Mongo is connected');
         app.listen(PORT, () => {
             console.log(`Server started on port ${PORT}`);
         });
     })
-    .catch( (err) => {
+    .catch( (err, client) => {
         console.error(`Error connecting to the database. ${err}`);
+        db = client.db("Zomato");
     });
 
 // Express server default endpoint
