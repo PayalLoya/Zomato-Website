@@ -27,7 +27,7 @@ const Footer = () => {
                 <div className="social">
                     <center>
                         <a href="www.facebook.com" target="_blank">
-                            <img src="../img/fb.png" alt="Facebook"/>
+                            <img src="React\zomato-app\img\fb.png" alt="Facebook"/>
                         </a>
                         <a href="www.instagram.com" target="_blank">
                             <img src="../img/instagram.png" alt="Instagram"/>

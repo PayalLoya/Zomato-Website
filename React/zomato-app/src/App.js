@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <Header />
       <Footer />
-    </div>
+   </div>
   );
-}
+};
 
 export default App;

@@ -17,22 +17,31 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // Mongodb Connection
-const connectionParams={
-    useNewUrlParser: true,
-    useUnifiedTopology: true 
-}
-MongoClient.connect(MONGO_URL, connectionParams)
-    .then( () => {
-        console.log('Mongo is connected');
-        app.listen(PORT, () => {
-            console.log(`Server started on port ${PORT}`);
-        });
-    })
-    .catch( (err, client) => {
-        console.error(`Error connecting to the database. ${err}`);
-        db = client.db("Zomato");
-    });
+// const connectionParams={
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true 
+// }
+// MongoClient.connect(MONGO_URL, connectionParams)
+//     .then( () => {
+//         console.log('Mongo is connected');
+//         app.listen(PORT, () => {
+//             console.log(`Server started on port ${PORT}`);
+//         });
+//     })
+//     .catch( (err, client) => {
+//         console.error(`Error connecting to the database. ${err}`);
+//         db = client.db("Zomato");
+//     });
 
+
+MongoClient.connect(MONGO_URL, (err, client) => {
+    console.log("Mongo is connected");
+    if (err) console.log("Error while connecting");
+    db = client.db("Zomato");
+    app.listen(PORT, () => {
+      console.log(`Server started on port ${PORT}`);
+    });
+  });
 // Express server default endpoint
 app.get("/", (req,res) => {
     res.send("Hello, welcome to Express 🥳😄😃😄")
