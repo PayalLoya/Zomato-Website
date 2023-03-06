@@ -1,0 +1,16 @@
+header{
+    background-color: #CE0505;
+    height: 62px;
+}
+
+#appName{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    padding-top: 4px;
+    padding-left: 30px;
+}
+
+.register, .login{
+    color: #fff;
+}
