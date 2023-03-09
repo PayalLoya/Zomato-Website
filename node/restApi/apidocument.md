@@ -54,7 +54,7 @@ http://localhost:8080/placeOrder
 
 ## Page 5
 
-=> List of order placed (get)
+=> List of orders placed (get)
 http://localhost:8080/orders
 => List of order placed of particular user (get)
 http://localhost:8080/orders?email=alam@gmail.com
