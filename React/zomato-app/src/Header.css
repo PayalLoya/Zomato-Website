@@ -1,16 +1,24 @@
-header{
-    background-color: #CE0505;
-    height: 62px;
+.header {
+  background-color: #ce0505;
 }
 
-#appName{
-    color: #fff;
-    font-size: 34px;
-    font-weight: 600;
-    padding-top: 4px;
-    padding-left: 30px;
+.appName {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 40px;
+  text-decoration: none;
 }
 
-.register, .login{
-    color: #fff;
+.account {
+  margin-right: 25px;
+}
+
+.navbar-text a {
+  color: white;
+}
+
+.signUp,
+.logIn {
+  text-decoration: none;
 }

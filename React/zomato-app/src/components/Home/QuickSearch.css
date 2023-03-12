@@ -1,0 +1,56 @@
+.quick-search{
+    margin-top: 45px;
+    margin-bottom: 80px;
+}
+
+.search-title{
+    color: #192F60;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.search-description{
+    color: #8C96AB;
+    font-size: 16px;
+}
+
+.meal-types{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.listing {
+    text-decoration: none;
+}
+ 
+.meals{
+    height: 130px;
+    width: 295px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #fff;
+    box-shadow: 4px 4px 6px #00000029;
+}
+
+.meal-img{
+    height: 130px;
+    width: 134px;
+}
+
+.card-body{
+    width: 160px;
+    padding-left: 28px;
+    padding-right: 0px;
+}
+
+.card-title{
+    color: #192F60;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-text{
+    color: #8C96AB;
+    font-size: 14px;
+}

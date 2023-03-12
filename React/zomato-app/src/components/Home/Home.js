@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import Search from '../Home/Search';
+import QuickSearch from "../Home/QuickSearch";
 
-class Home extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
-}
+const Home = (props) => {
+    return(
+        <>
+            <Search />
+            <QuickSearch />
+        </>
+    );
+};
 
 export default Home;
