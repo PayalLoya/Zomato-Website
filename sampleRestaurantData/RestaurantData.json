@@ -9,7 +9,7 @@
     "average_rating": 4.2,
     "rating_text": "Very Good",
     "cost": 666,
-    "contact_number": 9453524651,
+    "contact_number": "3125524651",
     "mealTypes": [
       {
         "mealtype_id": 1,
@@ -47,7 +47,7 @@
     "average_rating": 3.5,
     "rating_text": "Good",
     "cost": 450,
-    "contact_number": "122345352465",
+    "contact_number": "4142352465",
     "mealTypes": [
       {
         "mealtype_id": 1,
@@ -85,7 +85,7 @@
     "average_rating": 5,
     "rating_text": "Excellent",
     "cost": 1020,
-    "contact_number": "467564",
+    "contact_number": "1232467564",
     "mealTypes": [
       {
         "mealtype_id": 2,
@@ -122,7 +122,7 @@
     "average_rating": 4.5,
     "rating_text": "Very Good",
     "cost": 2100,
-    "contact_number": "3496508401",
+    "contact_number": "0126508401",
     "mealTypes": [
       {
         "mealtype_id": 4,
@@ -160,7 +160,7 @@
     "average_rating": 4.5,
     "rating_text": "Very Good",
     "cost": 780,
-    "contact_number": "8731537554",
+    "contact_number": "5861537554",
     "mealTypes": [
       {
         "mealtype_id": 1,
@@ -197,7 +197,7 @@
     "average_rating": 4,
     "rating_text": "Very Good",
     "cost": 810,
-    "contact_number": "1233766534",
+    "contact_number": "0513766534",
     "mealTypes": [
       {
         "mealtype_id": 5,
@@ -233,7 +233,7 @@
     "average_rating": 3.2,
     "rating_text": "Average",
     "cost": 450,
-    "contact_number": 9674573343,
+    "contact_number": "0121573343",
     "address": "House 6, New Colony, Majnu ka Tilla, New Delhi",
     "mealTypes": [
       {
@@ -270,6 +270,7 @@
     "rating_text": "Excellent",
     "cost": 200,
     "address": "Pacific Mall, Tagore Garden, New Delhi",
+    "contact_number":"1237392783",
     "mealTypes": [
       {
         "mealtype_id": 3,
@@ -307,7 +308,8 @@
     "rating_text": "Excellent",
     "cost": 1500,
     "address": "Bibvewadi, Pune",
-    "mealTypes": [
+    "contact_number":"5137766534",
+        "mealTypes": [
       {
         "mealtype_id": 3,
         "mealtype_name": "Dinner"
@@ -343,6 +345,7 @@
     "rating_text": "Average",
     "cost": 1200,
     "address": "Hadapsar, Pune",
+    "contact_number":"3831272313",
     "mealTypes": [
       {
         "mealtype_id": 4,
@@ -379,6 +382,7 @@
     "rating_text": "Average",
     "cost": 1360,
     "address": "Kothrud, Pune",
+    "contact_number":"6727613827",
     "mealTypes": [
       {
         "mealtype_id": 3,
@@ -416,6 +420,7 @@
     "rating_text": "Very Good",
     "cost": 920,
     "address": "Anand Vihar, New Delhi",
+    "contact_number":"2173681637",
     "mealTypes": [
       {
         "mealtype_id": 2,
@@ -454,6 +459,7 @@
     "rating_text": "Poor",
     "cost": 370,
     "address": "Jeevan Bhima Nagar, Bangalore",
+    "contact_number":"1347318327",
     "mealTypes": [
       {
         "mealtype_id": 4,
@@ -490,6 +496,7 @@
     "rating_text": "Excellent",
     "cost": 370,
     "address": "HSR, Bangalore",
+    "contact_number":"0129012812",
     "mealTypes": [
       {
         "mealtype_id": 1,
