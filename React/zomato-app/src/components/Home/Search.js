@@ -42,7 +42,7 @@ export default class Search extends Component {
     fetch(`${rurl}${stateId}`, { method: "GET" })
       .then((res) => res.json())
       .then((data) => {
-        this.setState({ restaurants: data });
+        this.setState({ restaurant: data });
         console.log(data);
       });
   };
@@ -64,7 +64,7 @@ export default class Search extends Component {
             </select>
             <select id="select-style" className="hotels">
               <option>SELECT RESTAURANTS</option>
-              {this.renderRest(this.state.restaurants)}
+              {this.renderRest(this.state.restaurant)}
             </select>
           </div>
         </div>

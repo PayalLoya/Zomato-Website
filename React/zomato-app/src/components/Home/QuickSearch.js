@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import QuickDisplay from "../Home/QuickDisplay";
 
-const qurl = "https://zomato-api-ntso.onrender.com/quickSearch";
+const qurl = "https:///zomato-api-ntso.onrender.com/quickSearch";
 
 export default class QuickSearch extends Component {
   constructor() {

@@ -18,17 +18,20 @@ const ListingDisplay = (props) => {
                 </div>
                 <div className="col-8 details">
                   <div className="hotel-name">
-                    <Link to={`/details?restId=${item.restaurant_id}`} className="link">
+                    <Link
+                      to={`/details?restId=${item.restaurant_id}`}
+                      className="link"
+                    >
                       {" "}
                       {item.restaurant_name}
                     </Link>
                   </div>
                   <div className="city-name">{item.address}</div>
-                  <div className="city-name">Rating: {item.rating_text}</div>
+                  <div className="city-name">Rating: {item.average_rating}</div>
                   <div className="city-name">Rs. {item.cost}</div>
                   <div className="labelDiv">
-                  <div className="category">Meals</div>
-                    <span className="badge bg-info text-dark">
+                    <div className="category">Meals</div>
+                    <span className="badge bg-primary">
                       {item.mealTypes[0].mealtype_name}
                     </span>
                     <span className="badge bg-danger">
@@ -36,11 +39,11 @@ const ListingDisplay = (props) => {
                     </span>
                   </div>
                   <div className="labelDiv">
-                  <div  className="category">Cuisines</div>
-                    <span className="badge bg-warning text-dark">
+                    <div className="category">Cuisines</div>
+                    <span className="badge bg-success">
                       {item.cuisines[0].cuisine_name}
                     </span>
-                    <span className="badge bg-primary">
+                    <span className="badge bg-warning text-dark">
                       {item.cuisines[1].cuisine_name}
                     </span>
                   </div>

@@ -1,0 +1,74 @@
+.restDetails{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restImg {
+    height: 265px;
+}
+
+.contentDiv{
+    margin-top: 15px;
+    padding-left: 40px;
+}
+
+.restName{
+    color: #192F60;
+}
+
+.MenuList{
+    background-color: #80808036;
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+.diffPage{
+    text-align: right;
+    margin-top: 60px;
+}
+
+.proceed{
+    margin-left: 10px;
+}
+
+.name{
+    font-size: 13px;
+}
+
+.items{
+    padding-bottom: 12px;
+}
+
+.id{
+    margin-right: 15px;
+}
+
+.menuImg{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.description{
+    margin-left: 20px;
+}
+
+.menuBody{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons{
+    margin-top: 5px;
+}
+
+.plus, .minus{
+    margin-right: 5px;
+    height: 25px;
+    width: 30px;
+}

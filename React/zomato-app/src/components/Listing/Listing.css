@@ -5,7 +5,6 @@ body {
 .restaurants_list{
     margin-top: 35px;
     margin-left: 7%;
-    height: 680px;
     position: relative;
 }
 
@@ -55,7 +54,7 @@ body {
 
 .details{
     padding-left: 65px;
-    padding-top: 8px;
+    padding-top: 6px;
 }
 
 .hotel-name {
@@ -64,11 +63,13 @@ body {
 }
 
 .link{
+    color: #06224b;
+    font-size: 20px;
     text-decoration: none;
 }
 
 .city-name {
-    font-size: 12px;
+    font-size: 13px;
     color: #636F88;
 }
 
@@ -82,11 +83,6 @@ body {
     margin-right: 3%;
 }
 
-@media (min-width: 1201px) {
-    .restaurants_list{
-        width: 
-    }
-} 
 
 
 
