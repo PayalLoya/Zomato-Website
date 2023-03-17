@@ -1,5 +1,9 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+dotenv.config();
+const MONGO_URL = process.env.MONGO_URL;
 
 mongoose.connect(
-  "mongodb+srv://payal:payal@cluster0.v6hyskw.mongodb.net/Zomato"
+  MONGO_URL
 );
+console.log("Mongo is connected");
