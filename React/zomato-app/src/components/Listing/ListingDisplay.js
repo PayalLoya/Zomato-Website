@@ -55,7 +55,7 @@ const ListingDisplay = (props) => {
       } else {
         return (
           <div>
-            <h1>No data </h1>
+            <h1>No results found </h1>
           </div>
         );
       }

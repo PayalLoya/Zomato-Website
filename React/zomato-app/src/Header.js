@@ -10,14 +10,14 @@ const Header = () => {
         <Link to ="/" className="appName">Zomato</Link>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text className="account">
-            <a href="#login" className="signUp">
+            <Link to="/register" className="signUp">
               Sign Up
-            </a>
+            </Link>
           </Navbar.Text>
           <Navbar.Text className="account">
-            <a href="#login" className="logIn">
+            <Link to="/login" className="logIn">
               Log In
-            </a>
+            </Link>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

@@ -34,46 +34,47 @@ export default class Details extends Component {
     let { details } = this.state;
     return (
       <>
-        <div className="container restDetails">
-          <div className="row">
-            <div className="col-5">
-              <img
-                src={details.restaurant_thumb}
-                alt="rest-img"
-                className="img-fluid restImg"
-              />
-            </div>
-            <div className="col-7 contentDiv">
-              <h3 className="restName">{details.restaurant_name}</h3>
-              <Tabs>
-                <TabList>
-                  <Tab>Overview</Tab>
-                  <Tab>Contact</Tab>
-                </TabList>
-                <TabPanel>
-                  <h6>Average Cost</h6>
-                  <p>₹900 for two people (approx.)</p>
-                  <h6>Average Rating</h6>
-                  <p>{details.rating_text}</p>
-                </TabPanel>
-                <TabPanel>
-                  <h6>Phone Number</h6>
-                  <p>{details.contact_number}</p>
-                  <h6>Address</h6>
-                  <p>{details.address}</p>
-                </TabPanel>
-              </Tabs>
-              <div className="diffPage">
-            <Link
-              to={`/listing/${this.state.mealId}`}
-              className="btn btn-danger"
-            >
-              BACK
-            </Link>
-            <button className="btn btn-success proceed" onClick={this.proceed}>
-              Proceed
-            </button>
+        <div className="container restDetails d-flex flex-wrap">
+          <div className="rest-image">
+            <img
+              src={details.restaurant_thumb}
+              alt="rest-img"
+              className="img-fluid restImg"
+            />
           </div>
+          <div className="contentDiv">
+            <h3 className="restName">{details.restaurant_name}</h3>
+            <Tabs>
+              <TabList>
+                <Tab>Overview</Tab>
+                <Tab>Contact</Tab>
+              </TabList>
+              <TabPanel>
+                <h6>Average Cost</h6>
+                <p>₹900 for two people (approx.)</p>
+                <h6>Average Rating</h6>
+                <p>{details.rating_text}</p>
+              </TabPanel>
+              <TabPanel>
+                <h6>Phone Number</h6>
+                <p>{details.contact_number}</p>
+                <h6>Address</h6>
+                <p>{details.address}</p>
+              </TabPanel>
+            </Tabs>
+            <div className="diffPage">
+              <Link
+                to={`/listing/${this.state.mealId}`}
+                className="btn btn-danger"
+              >
+                BACK
+              </Link>
+              <button
+                className="btn btn-success proceed"
+                onClick={this.proceed}
+              >
+                Proceed
+              </button>
             </div>
           </div>
         </div>

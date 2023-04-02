@@ -8,8 +8,8 @@ export default class Search extends Component {
   constructor() {
     super();
     this.state = { 
-      locations: "", 
-      restaurants: ""
+      location: "", 
+      restaurant: ""
     };
   }
 
@@ -30,7 +30,7 @@ export default class Search extends Component {
       return data.map((item) => {
         return (
           <option value={item.restaurant_id}>
-            {item.restaurant_name}
+            {item.restaurant_name} | {item.address}
           </option>
         );
       });
@@ -62,7 +62,7 @@ export default class Search extends Component {
               <option>SELECT CITY</option>
               {this.renderCity(this.state.location)}
             </select>
-            <select id="select-style" className="hotels">
+            <select className="hotels">
               <option>SELECT RESTAURANTS</option>
               {this.renderRest(this.state.restaurant)}
             </select>

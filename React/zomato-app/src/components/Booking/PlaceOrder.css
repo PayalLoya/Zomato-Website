@@ -1,0 +1,19 @@
+.placeOrder{
+    margin: 30px;
+}
+
+.menu-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.orderItems {
+  margin-bottom: 15px;
+}
+
+.orderItems > img {
+  height: 100px;
+  width: 100px;
+  margin-right: 15px;
+}
+

@@ -3,18 +3,19 @@
     margin-bottom: 30px;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.rest-image{
+    width: 50%;
+    padding-right: 30px;
 }
 
 .restImg {
     height: 265px;
+    border-radius: 10px;
+    margin-right: 40px;
 }
 
 .contentDiv{
     margin-top: 15px;
-    padding-left: 40px;
 }
 
 .restName{

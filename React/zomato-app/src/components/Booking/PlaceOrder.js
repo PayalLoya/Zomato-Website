@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import "./PlaceOrder.css";
 
-const url = "https:///zomato-api-ntso.onrender.com/menuItem";
+const url = "https:///zomato-api-ntso.onrender.com/menuItems";
 const purl = "https:///zomato-api-ntso.onrender.com/placeOrder";
 
 export default class PlaceOrder extends Component {
@@ -29,10 +30,12 @@ export default class PlaceOrder extends Component {
     if (data) {
       return data.map((item) => {
         return (
-          <div className="orderItems" key={item.menu_id}>
+          <div className="orderItems d-flex flex-wrap" key={item.menu_id}>
             <img src={item.menu_image} alt={item.menu_name} />
-            <h3>{item.menu_name}</h3>
-            <h4>Rs. {item.menu_price}</h4>
+            <div>
+              <h5>{item.menu_name}</h5>
+              <h5>Rs. {item.menu_price}</h5>
+            </div>
           </div>
         );
       });
@@ -55,15 +58,12 @@ export default class PlaceOrder extends Component {
 
   render() {
     return (
-      <div>
+      <div className="placeOrder">
         <center>
           <h2>Login First to Place Booking</h2>
         </center>
         <div className="container">
           <div className="panel panel-primary">
-            <div className="panel-heading">
-              <h3>{this.state.hotel_name}</h3>
-            </div>
             <div className="panel-body">
               <form action="http://localhost:8000/paynow" method="POST">
                 <div className="row">
@@ -120,10 +120,12 @@ export default class PlaceOrder extends Component {
                     />
                   </div>
                 </div>
-                {this.renderItem(this.state.menuItem)}
+                <div className="menu-item">
+                  {this.renderItem(this.state.menuItem)}
+                </div>
                 <div className="row">
                   <div className="col-md-12">
-                    <h2>Total Price is Rs. {this.state.cost}</h2>
+                    <h3>Total Price is Rs. {this.state.cost}</h3>
                   </div>
                 </div>
                 <button className="btn btn-success" onClick={this.checkout}>
@@ -135,12 +137,6 @@ export default class PlaceOrder extends Component {
         </div>
       </div>
     );
-
-    // return (
-    //   <>
-
-    //   </>
-    // );
   }
 
   componentDidMount() {

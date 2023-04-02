@@ -50,7 +50,7 @@ export default class ListingApi extends Component {
     let mealId = this.props.match.params.mealId;
     sessionStorage.setItem("mealId", mealId);
     axios.get(`${url}${mealId}`, { method: "GET" }).then((res) => {
-      this.setState({ restaurantList: res.data });
+      this.setState({ restaurantsList: res.data });
     });
   }
 }
