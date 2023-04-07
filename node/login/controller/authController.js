@@ -5,6 +5,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const config = require("../config");
 const User = require("../model/userModel");
+const { response } = require("express");
 
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
@@ -64,6 +65,19 @@ router.post("/login", (req, res) => {
       });
       res.send({ message: "Successfully logged in", auth: true, token: token });
     }
+  });
+});
+
+//userinfo
+router.get("/userInfo", (req, res) => {
+  let token = req.headers["x-auth-token"];
+  if (!token) res.send({ auth: false, token: "No token provided" });
+  //jwt verify
+  jwt.verify(token, config.secret, (err, user) => {
+    if (err) res.send({ auth: false, token: "Invalid token" });
+    user.findById(user.id, (err, result) => {
+      res.send(result);
+    });
   });
 });
 
