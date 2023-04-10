@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { Component } from "react";
 import "./Filter.css";
 
-let url = "https://zomato-api-ntso.onrender.com/filter";
+let url = "https://zomato-api-zi7j.onrender.com/filter";
 
 export default class CuisineFilter extends Component {
   filterCuisine = (event) => {

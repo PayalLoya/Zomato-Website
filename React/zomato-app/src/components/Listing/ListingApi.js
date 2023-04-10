@@ -5,7 +5,7 @@ import ListingDisplay from "./ListingDisplay";
 import CuisineFilter from "../Filter/CuisineFilter";
 import CostFilter from "../Filter/CostFilter";
 
-const url = "https://zomato-api-ntso.onrender.com/restaurants?mealId=";
+const url = "https://zomato-api-zi7j.onrender.com/restaurants?mealId=";
 
 export default class ListingApi extends Component {
   constructor() {

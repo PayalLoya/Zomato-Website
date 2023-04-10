@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Search.css";
 
-const lurl = "https://zomato-api-ntso.onrender.com/locations";
-const rurl = "https://zomato-api-ntso.onrender.com/restaurants?stateId=";
+const lurl = "https://zomato-api-zi7j.onrender.com/locations";
+const rurl = "https://zomato-api-zi7j.onrender.com/restaurants?stateId=";
 
 export default class Search extends Component {
   constructor() {
@@ -30,7 +30,7 @@ export default class Search extends Component {
       return data.map((item) => {
         return (
           <option value={item.restaurant_id}>
-            {item.restaurant_name} | {item.address}
+            {item.restaurant_name}
           </option>
         );
       });

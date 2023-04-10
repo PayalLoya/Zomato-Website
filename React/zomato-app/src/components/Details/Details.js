@@ -6,7 +6,7 @@ import "react-tabs/style/react-tabs.css";
 import MenuList from "./MenuList";
 import "./Detail.css";
 
-const url = "https://zomato-api-ntso.onrender.com";
+const url = "https://zomato-api-zi7j.onrender.com";
 
 export default class Details extends Component {
   constructor() {

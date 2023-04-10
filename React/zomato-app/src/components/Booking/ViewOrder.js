@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import OrderDisplay from "../Booking/OrderDisplay";
 import axios from "axios";
 
-const url = "https:///zomato-api-ntso.onrender.com";
+const url = "https://zomato-api-zi7j.onrender.com";
 
 export default class ViewOrder extends Component {
   constructor() {

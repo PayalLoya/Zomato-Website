@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./PlaceOrder.css";
 
-const url = "https:///zomato-api-ntso.onrender.com/menuItems";
-const purl = "https:///zomato-api-ntso.onrender.com/placeOrder";
+const url = "https://zomato-api-zi7j.onrender.com/menuItems";
+const purl = "https://zomato-api-zi7j.onrender.com/placeOrder";
 
 export default class PlaceOrder extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ export default class PlaceOrder extends Component {
       email: sessionData ? sessionData[1] : "",
       cost: 0,
       phone: sessionData ? sessionData[2] : "",
-      address: "Sec 2",
+      address: "",
       menuItem: "",
     };
   }
@@ -57,11 +57,15 @@ export default class PlaceOrder extends Component {
   };
 
   render() {
+    if (sessionStorage.getItem("ltk") == null) {
+      return (
+        <center>
+            <h2 className="title">Login First to Place Booking...</h2>
+        </center>
+      );
+    }
     return (
       <div className="placeOrder">
-        <center>
-          <h2>Login First to Place Booking</h2>
-        </center>
         <div className="container">
           <div className="panel panel-primary">
             <div className="panel-body">
