@@ -77,10 +77,10 @@ class Header extends Component {
     fetch(url, {
       method: "GET",
       headers: {
-        "x-access-token": sessionStorage.getItem("ltk"),
+        "x-auth-token": sessionStorage.getItem("ltk"),
       },
     })
-      .then((res) => res.json)
+      .then((res) => res.json())
       .then((data) => {
         this.setState({
           userData: data,

@@ -28,7 +28,7 @@ export default class Login extends Component {
       },
       body: JSON.stringify(this.state),
     })
-      .then((res) => res.json)
+      .then((res) => res.json())
       .then((data) => {
         if (data.auth === false) {
           this.setState({ message: data.token });
@@ -38,7 +38,6 @@ export default class Login extends Component {
         }
       });
   };
-
   render() {
     return (
       <div
