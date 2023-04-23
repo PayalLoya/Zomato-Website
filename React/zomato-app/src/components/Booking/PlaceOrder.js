@@ -14,9 +14,9 @@ export default class PlaceOrder extends Component {
       id: Math.floor(Math.random() * 10000),
       hotel_name: this.props.match.params.restName,
       name: sessionData ? sessionData[0] : "",
-      email: sessionData ? sessionData[0] : "",
+      email: sessionData ? sessionData[1] : "",
       cost: 0,
-      phone: sessionData ? sessionData[0] : "",
+      phone: sessionData ? sessionData[2] : "",
       address: "",
       menuItem: "",
     };
