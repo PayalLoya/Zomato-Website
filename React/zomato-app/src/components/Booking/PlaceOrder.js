@@ -9,14 +9,14 @@ export default class PlaceOrder extends Component {
     super(props);
     let sessionData = sessionStorage.getItem("userInfo")
       ? sessionStorage.getItem("userInfo").split(",")
-      : [];
+      : "";
     this.state = {
       id: Math.floor(Math.random() * 10000),
       hotel_name: this.props.match.params.restName,
       name: sessionData ? sessionData[0] : "",
-      email: sessionData ? sessionData[1] : "",
+      email: sessionData ? sessionData[0] : "",
       cost: 0,
-      phone: sessionData ? sessionData[2] : "",
+      phone: sessionData ? sessionData[0] : "",
       address: "",
       menuItem: "",
     };
@@ -60,84 +60,74 @@ export default class PlaceOrder extends Component {
     if (sessionStorage.getItem("ltk") == null) {
       return (
         <center>
-            <h2 className="title">Login First to Place Booking...</h2>
+          <h2 className="title">Login First to Place Booking...</h2>
         </center>
       );
     }
     return (
       <div className="placeOrder">
         <div className="container">
-          <div className="panel panel-primary">
-            <div className="panel-body">
-              <form action="http://localhost:8000/paynow" method="POST">
-                <div className="row">
-                  <input type="hidden" name="cost" value={this.state.cost} />
-                  <input type="hidden" name="id" value={this.state.id} />
-                  <input
-                    type="hidden"
-                    name="hotel_name"
-                    value={this.state.hotel_name}
-                  />
-                  <div className="form-group col-md-6">
-                    <label for="fname" className="control-label">
-                      FirstName
-                    </label>
-                    <input
-                      className="form-control"
-                      name="name"
-                      value={this.state.name}
-                      onChange={this.handleChange}
-                    />
-                  </div>
-                  <div className="form-group col-md-6">
-                    <label for="email" className="control-label">
-                      Email
-                    </label>
-                    <input
-                      className="form-control"
-                      name="email"
-                      value={this.state.email}
-                      onChange={this.handleChange}
-                      readOnly
-                    />
-                  </div>
-                  <div className="form-group col-md-6">
-                    <label for="phone" className="control-label">
-                      Phone
-                    </label>
-                    <input
-                      className="form-control"
-                      name="phone"
-                      value={this.state.phone}
-                      onChange={this.handleChange}
-                    />
-                  </div>
-                  <div className="form-group col-md-6">
-                    <label for="address" className="control-label">
-                      Address
-                    </label>
-                    <input
-                      className="form-control"
-                      name="address"
-                      value={this.state.address}
-                      onChange={this.handleChange}
-                    />
-                  </div>
-                </div>
-                <div className="menu-item">
-                  {this.renderItem(this.state.menuItem)}
-                </div>
-                <div className="row">
-                  <div className="col-md-12">
-                    <h3>Total Price is Rs. {this.state.cost}</h3>
-                  </div>
-                </div>
-                <button className="btn btn-success" onClick={this.checkout}>
-                  Place Order
-                </button>
-              </form>
+          <form action="http://localhost:8000/paynow" method="POST">
+            <h2 className="hotelName">{this.state.hotel_name}</h2>
+            <div className="row">
+              <div className="form-group col-md-6">
+                <label for="fname" className="control-label">
+                  FirstName
+                </label>
+                <input
+                  className="form-control"
+                  name="name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="form-group col-md-6">
+                <label for="email" className="control-label">
+                  Email
+                </label>
+                <input
+                  className="form-control"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                  readOnly
+                />
+              </div>
+              <div className="form-group col-md-6">
+                <label for="phone" className="control-label">
+                  Phone
+                </label>
+                <input
+                  className="form-control"
+                  name="phone"
+                  value={this.state.phone}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="form-group col-md-6">
+                <label for="address" className="control-label">
+                  Address
+                </label>
+                <input
+                  className="form-control"
+                  name="address"
+                  value={this.state.address}
+                  onChange={this.handleChange}
+                />
+              </div>
             </div>
-          </div>
+            <div className="menu-item">
+              {this.renderItem(this.state.menuItem)}
+            </div>
+            <div className="row">
+              <div className="col-md-12">
+                <h3>Total Price is Rs. {this.state.cost}</h3>
+              </div>
+            </div>
+            <button className="btn btn-success" onClick={this.checkout}>
+              Place Order
+            </button>
+          </form>
         </div>
       </div>
     );

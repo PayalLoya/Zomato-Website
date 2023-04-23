@@ -23,8 +23,8 @@ export default class ListingApi extends Component {
     return (
       <>
         <section className="container restaurants_list">
-          <div className="row">
-            <div className="col-5 filterSort">
+          <div className=" d-flex flex-wrap">
+            <div className="filterSort">
               <h6 className="filter">Filters</h6>
               <CuisineFilter
                 mealId={this.props.match.params.mealId}

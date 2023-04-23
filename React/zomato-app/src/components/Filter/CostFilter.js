@@ -17,7 +17,7 @@ export default class CostFilter extends Component {
     } else {
       costUrl = `${url}/${mealId}?lcost=${lcost}&hcost=${hcost}`;
     }
-    
+
     axios.get(costUrl).then((res) => {
       this.props.restPerCost(res.data);
     });
@@ -31,29 +31,65 @@ export default class CostFilter extends Component {
           <label className="radio">
             <input type="radio" name="cuisine" value="" className="button" />
             All
-          </label><br/>
+          </label>
+          <br />
           <label className="radio">
-            <input type="radio" name="cuisine" value="100-300"  className="button"/>
+            <input
+              type="radio"
+              name="cuisine"
+              value="100-300"
+              className="button"
+            />
             100 - 300
-          </label><br/>
+          </label>
+          <br />
           <label className="radio">
-            <input type="radio" name="cuisine" value="301-500"  className="button"/>
+            <input
+              type="radio"
+              name="cuisine"
+              value="301-500"
+              className="button"
+            />
             301 - 500
-          </label><br/>
+          </label>
+          <br />
           <label className="radio">
-            <input type="radio" name="cuisine" value="501-800"  className="button"/>
+            <input
+              type="radio"
+              name="cuisine"
+              value="501-800"
+              className="button"
+            />
             501 - 800
-          </label><br/>
+          </label>
+          <br />
           <label className="radio">
-            <input type="radio" name="cuisine" value="801-1000"  className="button"/>
+            <input
+              type="radio"
+              name="cuisine"
+              value="801-1000"
+              className="button"
+            />
             801 - 1000
-          </label><br/>
+          </label>
+          <br />
           <label className="radio">
-            <input type="radio" name="cuisine" value="1001-1200"  className="button"/>
+            <input
+              type="radio"
+              name="cuisine"
+              value="1001-1200"
+              className="button"
+            />
             1001 - 1200
-          </label><br/>
+          </label>
+          <br />
           <label className="radio">
-            <input type="radio" name="cuisine" value="1201-2000"  className="button"/>
+            <input
+              type="radio"
+              name="cuisine"
+              value="1201-2000"
+              className="button"
+            />
             1201 - 2000
           </label>
         </div>

@@ -7,7 +7,7 @@ const ListingDisplay = (props) => {
       if (listData.length > 0) {
         return listData.map((item) => {
           return (
-            <div className="container col-7 item" key={item.restaurant_id}>
+            <div className="container item" key={item.restaurant_id}>
               <div className="row restaurants">
                 <div className="col-4">
                   <img
