@@ -17,8 +17,9 @@ class Header extends Component {
 
   handleLogOut = () => {
     sessionStorage.removeItem("ltk");
-    sessionStorage.setItem("loginStatus", "logout");
     this.setState({userData: " " });
+    sessionStorage.setItem("userInfo", "");
+    sessionStorage.setItem("loginStatus", "logged0ut");
     this.props.history.push("/");
   };
 
@@ -27,11 +28,10 @@ class Header extends Component {
       let data = this.state.userData;
       let outArray = [data.name, data.email, data.phone];
       sessionStorage.setItem("userInfo", outArray);
-      sessionStorage.setItem("loginStatus", "login");
       return (
         <>
           <Navbar.Text className="account">
-            Hi, {this.state.userData.name}
+            Hi, {data.name}
           </Navbar.Text>
           <Navbar.Text className="account" onClick={this.handleLogOut}>
             LogOut

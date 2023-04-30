@@ -34,6 +34,7 @@ export default class Login extends Component {
           this.setState({ message: data.token });
         } else {
           sessionStorage.setItem("ltk", data.token);
+          sessionStorage.setItem("loginStatus", "loggedIn");
           this.props.history.push("/");
         }
       });
